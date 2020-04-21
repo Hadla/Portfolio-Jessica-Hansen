@@ -1,0 +1,57 @@
+.contact-info-area {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-info-container {
+    margin-top: 4rem;
+    width: 17rem;
+    height: 15rem;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background: white;
+}
+
+.detailed-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-info-header {
+    margin-top: 0.8rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.3rem;
+    color: black;
+    display: flex;
+    justify-content: center;
+}
+.contact-info-text {
+    margin-top: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.info-text-header {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 900;
+
+}
+.info-text {
+    color: black;
+    font-size: 0.8rem;
+    font-weight: 100;
+}
+
+.social-media {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 0.2rem;
+}
+
+.social-media-icon {
+    width: 1.4rem;
+    margin-right: 1rem;
+}

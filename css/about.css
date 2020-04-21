@@ -1,0 +1,31 @@
+.about-area {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 7%;
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25rem;
+    height: 25rem;
+}
+
+.about-header {
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+
+}
+
+.about-text {
+    margin-top: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+.profile-image {
+    width: 25rem;
+}
