@@ -1,0 +1,25 @@
+.gallery {
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+
+}
+
+.gallery-image {
+    margin-top: 2rem;
+    height: 20rem;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.gallery-button {
+    background: none;
+    border: none;
+    outline: none !important;
+    color: rgb(214, 207, 207);
+}
+
+.gallery-button a:hover {
+    color: rgb(19, 17, 17);
+}

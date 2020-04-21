@@ -4,26 +4,19 @@
 }
 .project-area {
     padding: 1em;
-    margin-top: 3rem;
     margin-right: 10%;
     display: flex;
     justify-content: center;
-
-}
-
-.project-image {
-    max-width: 20rem;
-    overflow: hidden;
 }
 
 .project-info {
     margin-left: 2rem;
     display: flex;
     flex-direction: column;
-
 }
 
 .text-about-project {
+    margin-top: 4.5rem;
     margin-bottom: 2rem;
     height: 6rem;
     width: 20rem;
@@ -47,7 +40,7 @@
 .button-and-date {
     display: flex;
     flex-direction: row;
-    margin-top: 10.5rem;
+    margin-top: 8rem;
 
 }
 

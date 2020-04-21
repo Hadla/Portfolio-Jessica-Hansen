@@ -11,6 +11,12 @@
     <!-- Custom css file -->
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/projects.css">
+    <link rel="stylesheet" href="./css/carousel.css">
+    <style>
+        .mySlides {
+            display: none;
+        }
+    </style>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
@@ -31,8 +37,8 @@
                         <li class="nav-item">
                             <a class="nav-link" href="index.html">Home</a>
                         </li>
-                        <li class="nav-item active">
-                            <a class="nav-link" href="about.html">About <span class="sr-only">(current)</span></a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="contactInfo.html">Contact information</a>
@@ -46,25 +52,69 @@
     <!-- End Header -->
     <!-- Start About Info -->
     <div class="project-area">
-        <div>
-            <img class="project-image" src="./images/savannahs2.jpg">
-        </div>
+        <!--Start Gallery-->
+        <button class="gallery-button" onclick="plusDivs(-1)"><a>&#10094;</a></button>
+        <img class="gallery-image" src="./images/savannahs/savannahs-gallery1.jpg">
+        <img class="gallery-image" src="./images/savannahs/savannahs-gallery2.jpg">
+        <img class="gallery-image" src="./images/savannahs/savannahs-gallery3.jpg">
+        <a><button class="gallery-button" onclick="plusDivs(1)"><a>&#10095;</a></button></a>
+
+        <script>
+            let myIndex = 0;
+            carousel();
+
+            function carousel() {
+                const image = document.getElementsByClassName("gallery-image");
+                for (let i = 0; i < image.length; i++) {
+                    image[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > image.length) { myIndex = 1 }
+                image[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 3000);
+            }
+        </script>
+        <script>
+            let slideIndex = 1;
+            showDivs(slideIndex);
+
+            function plusDivs(slideNum) {
+                showDivs(slideIndex += slideNum);
+            }
+
+            function showDivs(slideNum) {
+                var image = document.getElementsByClassName("gallery-image");
+                if (slideNum > image.length) { slideIndex = 1 }
+                if (slideNum < 1) { slideIndex = image.length }
+                for (let i = 0; i < image.length; i++) {
+                    image[i].style.display = "none";
+                }
+                image[slideIndex - 1].style.display = "block";
+            }
+        </script>
+
+
+        <!--End Gallery-->
         <div class="project-info">
-        <div class="text-about-project">
-            <h3 class="company-name">Savannahs</h3>
-            <p class="company-project-info">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                incididunt ut
-                labore et dolore magna aliqua.
-            </p>
-        </div>
-        <div class="button-and-date">
-            <div class="buttons-container">
-                <button class="button"><a class="button-text" href="https://www.savannahs.com/se/home">Go to site</a></button>
+            <div class="text-about-project">
+                <h3 class="company-name">Savannahs</h3>
+                <p class="company-project-info">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut
+                    labore et dolore magna aliqua.
+                </p>
+                <p class="company-project-info">
+                    Adipiscing ipsum sit dolor amet, adipiscing sed do eiusmod tempor.
+                </p>
             </div>
-            <div class="date-of-project">02-07-2020</div>
+            <div class="button-and-date">
+                <div class="buttons-container">
+                    <button class="button"><a class="button-text" href="https://www.savannahs.com/se/home">Go to
+                            site</a></button>
+                </div>
+                <div class="date-of-project">02-07-2020</div>
+            </div>
         </div>
-    </div>
     </div>
     <!-- End About Info -->
 
