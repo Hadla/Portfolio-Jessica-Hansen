@@ -2,10 +2,16 @@
     overflow: hidden;
     display: flex;
     justify-content: center;
-
+    height: 20rem;
+}
+.gallery-image-container {
+    width: 20rem;
+    display: flex;
+    justify-content: center;
 }
 
 .gallery-image {
+    overflow: hidden;
     margin-top: 2rem;
     height: 20rem;
     overflow: hidden;

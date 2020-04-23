@@ -16,10 +16,9 @@
 }
 
 .text-about-project {
-    margin-top: 4.5rem;
-    margin-bottom: 2rem;
-    height: 6rem;
-    width: 20rem;
+    margin-top: 2rem;
+    margin-left: 0.5rem;
+    width: 30rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -30,17 +29,19 @@
 
 .company-name {
     margin-bottom: 2rem;
-    margin-top: 2rem;
 }
 
 .company-project-info {
     line-height: 1.5rem;
 }
 
+.job-title {
+    font-size: 1rem;
+}
+
 .button-and-date {
     display: flex;
     flex-direction: row;
-    margin-top: 8rem;
 
 }
 
@@ -56,6 +57,7 @@
     font-size: 1rem;
     font-weight: 100;
     outline: none !important;
+    margin-right: 2rem;
 }
 
 .button-text {
